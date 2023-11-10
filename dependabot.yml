@@ -1,0 +1,15 @@
+version: 2
+registries:
+  shakacode_rubygems:
+    type: rubygems-server
+    url: rubygems.pkg.github.com/rorp-direct-software
+    token: ${{secrets.RORP_PASSWORD}}
+updates:
+  - package-ecosystem: "bundler"
+    directory: "/"
+    schedule:
+      interval: "daily" # Adjust the update frequency as needed
+    open-pull-requests-limit: 10
+    default-branch: "main"
+    registries:
+      - shakacode_rubygems
