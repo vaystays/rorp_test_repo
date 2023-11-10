@@ -2,8 +2,9 @@ version: 2
 registries:
   shakacode_rubygems:
     type: rubygems-server
-    url: rubygems.pkg.github.com/rorp-direct-software
-    token: ${{secrets.RORP_PASSWORD}}
+    url: rubygems.pkg.github.com
+    username: rorp-direct-software
+    password: ${{secrets.RORP_PASSWORD}}
 updates:
   - package-ecosystem: "bundler"
     directory: "/"
