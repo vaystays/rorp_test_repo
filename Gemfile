@@ -62,3 +62,5 @@ gem 'react_on_rails'
 source "https://rubygems.pkg.github.com/shakacode-tools" do
   gem "react_on_rails_pro"
 end
+
+gem 'sidekiq', '< 5.2.10'
