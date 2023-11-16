@@ -2,7 +2,7 @@ version: 2
 registries:
   shakacode_rubygems:
     type: rubygems-server
-    url: rubygems.pkg.github.com
+    url: rubygems.pkg.github.com/shakacode-tools/react_on_rails_pro
     username: rorp-direct-software
     password: ${{secrets.RORP_PASSWORD}}
 updates:
